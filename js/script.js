@@ -4,13 +4,33 @@ const container= document.getElementById('container-card');
 const team = 
 [
   {
-    name: 'Wayne',
+    name: 'Wayne Bernett',
     role: 'Founder & CEO',
     image: 'wayne-barnett-founder-ceo.jpg'
   },
   {
-    name: 'Gaspare',
-    role: 'Founder & CEO',
+    name: 'Angela Caroll',
+    role: 'Chief Editor',
+    image: 'wayne-barnett-founder-ceo.jpg'
+  },
+  {
+    name: 'Angela Caroll',
+    role: 'Chief Editor',
+    image: 'wayne-barnett-founder-ceo.jpg'
+  },
+  {
+    name: 'Angela Caroll',
+    role: 'Chief Editor',
+    image: 'wayne-barnett-founder-ceo.jpg'
+  },
+  {
+    name: 'Angela Caroll',
+    role: 'Chief Editor',
+    image: 'wayne-barnett-founder-ceo.jpg'
+  },
+  {
+    name: 'Angela Caroll',
+    role: 'Chief Editor',
     image: 'wayne-barnett-founder-ceo.jpg'
   }
 ]
@@ -23,7 +43,8 @@ for(let person of team){
   console.log('==================')*/
   container.innerHTML += 
   `<div><span>${person.image}</span> <br>
-  <span>${person.name}</span> </div>`
+  <span>${person.name}</span> <br> 
+  <span>${person.role}</span></div>`
 }
 
 //3. creare card per inserimento dati
