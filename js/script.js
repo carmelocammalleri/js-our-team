@@ -1,5 +1,5 @@
 const container= document.getElementsByClassName('container');
-
+addCard();
 
 //1. array oggetti con info personale
 const team = 
@@ -26,7 +26,7 @@ for(let person of team){
 
 //3. creare card per inserimento dati
 function addCard() {
-  let cards = document.createElement('div');
-  cards.classList.add('card');
-  container.append(cards)
+    const cards = document.createElement('div');
+    cards.classList.add('card');
+    container.append(cards)
 }
