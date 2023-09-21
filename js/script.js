@@ -41,20 +41,20 @@ for(let person of team){
   console.log(person.name);
   console.log(person.role);
   console.log('==================')*/
-  addCard()
+  addCard(person)
 }
 
 //3. creare card per inserimento dati
-function addCard() {
+function addCard(info) {
   
     const cards = document.createElement('div');
     container.classList.add('d-flex', 'flex-wrap')
     cards.classList.add('card', 'd-flex',  'col-4');
 
     cards.innerHTML = 
-    `<span>${person.image}</span> <br>
-    <span>${person.name}</span> <br> 
-    <span>${person.role}</span>`
+    `<span>${info.image}</span> <br>
+    <span>${info.name}</span> <br> 
+    <span>${info.role}</span>`
 
     container.append(cards);
 }
