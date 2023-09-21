@@ -1,5 +1,4 @@
-const container= document.getElementById('contain');
-addCard();
+const container= document.getElementById('container-card');
 
 //1. array oggetti con info personale
 const team = 
@@ -10,23 +9,31 @@ const team =
     image: 'wayne-barnett-founder-ceo.jpg'
   },
   {
-  name: 'Gaspare',
-  role: 'Founder & CEO',
-  image: 'wayne-barnett-founder-ceo.jpg'
+    name: 'Gaspare',
+    role: 'Founder & CEO',
+    image: 'wayne-barnett-founder-ceo.jpg'
   }
 ]
 
 //2. visualizzazione info
 for(let person of team){
-  console.log(person.image);
+ /* console.log(person.image);
   console.log(person.name);
   console.log(person.role);
-  console.log('==================')
+  console.log('==================')*/
+  container.innerHTML = 
+  `<span>${person.image}</span>
+  <span>${person.name}</span> `
+     
+  addCard();
+
 }
 
 //3. creare card per inserimento dati
 function addCard() {
+  
     const cards = document.createElement('div');
-    cards.classList.add('card');
+    container.classList.add('d-flex', 'flex-wrap')
+    cards.classList.add('card', 'd-flex',  'col-4');
     container.append(cards);
 }
