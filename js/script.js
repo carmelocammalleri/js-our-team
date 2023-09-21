@@ -21,12 +21,9 @@ for(let person of team){
   console.log(person.name);
   console.log(person.role);
   console.log('==================')*/
-  container.innerHTML = 
-  `<span>${person.image}</span>
-  <span>${person.name}</span> `
-     
-  addCard();
-
+  container.innerHTML += 
+  `<div><span>${person.image}</span> <br>
+  <span>${person.name}</span> </div>`
 }
 
 //3. creare card per inserimento dati
