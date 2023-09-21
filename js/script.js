@@ -41,10 +41,7 @@ for(let person of team){
   console.log(person.name);
   console.log(person.role);
   console.log('==================')*/
-  container.innerHTML += 
-  `<div><span>${person.image}</span> <br>
-  <span>${person.name}</span> <br> 
-  <span>${person.role}</span></div>`
+  addCard()
 }
 
 //3. creare card per inserimento dati
@@ -53,5 +50,11 @@ function addCard() {
     const cards = document.createElement('div');
     container.classList.add('d-flex', 'flex-wrap')
     cards.classList.add('card', 'd-flex',  'col-4');
+
+    cards.innerHTML = 
+    `<span>${person.image}</span> <br>
+    <span>${person.name}</span> <br> 
+    <span>${person.role}</span>`
+
     container.append(cards);
 }
