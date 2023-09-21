@@ -6,32 +6,32 @@ const team =
   {
     name: 'Wayne Bernett',
     role: 'Founder & CEO',
-    image: 'wayne-barnett-founder-ceo.jpg'
+    image: '<img src="./img/wayne-barnett-founder-ceo.jpg" alt="wayne">'
   },
   {
     name: 'Angela Caroll',
     role: 'Chief Editor',
-    image: 'wayne-barnett-founder-ceo.jpg'
+    image: '<img src="./img/angela-caroll-chief-editor.jpg" alt="carrol">'
   },
   {
-    name: 'Angela Caroll',
-    role: 'Chief Editor',
-    image: 'wayne-barnett-founder-ceo.jpg'
+    name: 'Walter Gordon',
+    role: 'Office Manager',
+    image: '<img src="./img/walter-gordon-office-manager.jpg" alt="walter">'
   },
   {
-    name: 'Angela Caroll',
-    role: 'Chief Editor',
-    image: 'wayne-barnett-founder-ceo.jpg'
+    name: 'Angela Lopez',
+    role: 'Social Media Manager',
+    image: '<img src="./img/angela-lopez-social-media-manager.jpg" alt="angela">'
   },
   {
-    name: 'Angela Caroll',
-    role: 'Chief Editor',
-    image: 'wayne-barnett-founder-ceo.jpg'
+    name: 'Scott Estrada',
+    role: 'Developer',
+    image: '<img src="./img/scott-estrada-developer.jpg" alt="scott">'
   },
   {
-    name: 'Angela Caroll',
-    role: 'Chief Editor',
-    image: 'wayne-barnett-founder-ceo.jpg'
+    name: 'Barbara Ramos',
+    role: 'Graphic Designer',
+    image: '<img src="./img/barbara-ramos-graphic-designer.jpg" alt="barbara">'
   }
 ]
 
@@ -49,12 +49,13 @@ function addCard(info) {
   
     const cards = document.createElement('div');
     container.classList.add('d-flex', 'flex-wrap')
-    cards.classList.add('card', 'd-flex',  'col-4');
+    cards.classList.add('card', 'd-flex',  'col-4', 'text-center');
 
+    //4. stampa
     cards.innerHTML = 
     `<span>${info.image}</span> <br>
-    <span>${info.name}</span> <br> 
-    <span>${info.role}</span>`
+    <span class="fw-bold fs-5">${info.name}</span> <br> 
+    <span class="fs-6">${info.role}</span>`
 
     container.append(cards);
 }
